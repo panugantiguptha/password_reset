@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f2f4f7;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.container {
+    width: 420px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+
+    line-height: 1.5;
+}
+
+.container > p {
+    text-align: center;
+}
+
+label {
+    display: block;
+
+    margin-top: 20px;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #555;
+}
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #333;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+
+/*password strength*/
+
+.strength-container {
+    width: 100%;
+
+    height: 8px;
+
+    background: #ddd;
+
+    border-radius: 5px;
+
+    margin-top: 10px;
+
+    overflow: hidden;
+}
+
+#strengthBar {
+    height: 100%;
+
+    width: 0%;
+
+    background: #555;
+
+    transition: width 0.3s ease;
+}
+
+.strength-text {
+    font-size: 13px;
+
+    margin-top: 6px;
+
+    text-align: left !important;
+}
+
+
+/*password matching*/
+
+#matchMessage {
+    font-size: 13px;
+
+    margin-top: 6px;
+}
+
+
+/*reset link*/
+
+.reset-link {
+    background: #f4f4f4;
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    word-break: break-all;
+
+    margin-top: 15px;
+}
+
+.reset-link a {
+    color: #333;
+
+    text-decoration: none;
+}
+
+.reset-link a:hover {
+    text-decoration: underline;
+}
+
+.expiry {
+    font-size: 14px;
+
+    margin-top: 20px;
+}
+
+
+/*back link*/
+
+.back-link {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #333;
+
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/*success page*/
+
+.success {
+    text-align: center;
+}
+
+
+/*mobile responsive*/
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 90%;
+
+        padding: 25px;
+    }
+
+}
